@@ -1,1 +1,5 @@
-tâches, prompt, objectif pedagogiques
+JDT:
+- tâches, prompt.
+
+Rapport:
+- objectifs pédagogiques, code, tests fonctionnels.
