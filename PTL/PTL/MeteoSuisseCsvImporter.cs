@@ -1,4 +1,4 @@
-﻿using System;
+﻿using System.Text;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
@@ -12,7 +12,7 @@ namespace PTL
         // "Ville" | "Date et heure" | "Précipitations (mm)" | "Jours de précipitations"
         public static (string Name, IEnumerable<TimePoint> Points) LoadSeries(string path)
         {
-            var text = File.ReadAllText(path);
+            var text = File.ReadAllText(path, Encoding.Latin1);
 
             // Détecter séparateur ; , ou tabulation
             var sample = new string(text.Take(2048).ToArray());
