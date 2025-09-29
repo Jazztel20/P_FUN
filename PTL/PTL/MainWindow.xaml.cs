@@ -40,7 +40,7 @@ namespace PTL
         // === UI events ===
         private void OnImportCsv(object sender, RoutedEventArgs e)
         {
-            var dlg = new OpenFileDialog { Filter = "CSV files (*.csv)|*.csv|All files (*.*)|*.*" };
+            var dlg = new OpenFileDialog { Filter = "CSV/TXT (*.csv;*.txt)|*.csv;*.txt|Tous les fichiers (*.*)|*.*" };
             if (dlg.ShowDialog(this) != true) return;
 
             try
