@@ -1,0 +1,101 @@
+﻿<Window x:Class="PTL.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:wpf="clr-namespace:ScottPlot.WPF;assembly=ScottPlot.WPF"
+        mc:Ignorable="d"
+        Title="PTL – Précipitation annuelle en Suisse"
+        Height="700" Width="1100">
+
+    <Grid Margin="16">
+        <!-- Lignes principales -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Bandeau supérieur -->
+        <Border Grid.Row="0" Padding="12" Background="#F7F7FA" CornerRadius="12">
+            <Grid>
+                <!-- Colonnes -->
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <!-- Lignes -->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <!-- Titre -->
+                <TextBlock Grid.Row="0" Grid.ColumnSpan="5"
+                           Text="Précipitation annuelle en Suisse"
+                           FontSize="24" FontWeight="Bold" Margin="0 0 0 8"/>
+
+                <!-- De / À -->
+                <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Horizontal" VerticalAlignment="Center">
+                    <TextBlock Text="De" VerticalAlignment="Center" Margin="0,0,8,0"/>
+                    <DatePicker x:Name="dpFrom" SelectedDateChanged="OnDateChanged" Width="140"/>
+                    <TextBlock Text="À" Margin="12 0 0 0" VerticalAlignment="Center"/>
+                    <DatePicker x:Name="dpTo" SelectedDateChanged="OnDateChanged" Width="140" Margin="8,0,0,0"/>
+                </StackPanel>
+
+                <!-- Villes -->
+                <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Horizontal" VerticalAlignment="Center">
+                    <TextBlock Text="Choisir la/les villes" VerticalAlignment="Center" Margin="0,0,12,0"/>
+                    <CheckBox x:Name="cbLausanne" Content="Lausanne" IsChecked="True"
+                              Checked="OnCityToggle" Unchecked="OnCityToggle" Margin="0,0,8,0"/>
+                    <CheckBox x:Name="cbLugano" Content="Lugano" IsChecked="True"
+                              Checked="OnCityToggle" Unchecked="OnCityToggle" Margin="0,0,8,0"/>
+                    <CheckBox x:Name="cbZurich" Content="Zürich"
+                              Checked="OnCityToggle" Unchecked="OnCityToggle" Margin="0,0,8,0"/>
+                    <CheckBox x:Name="cbDavos" Content="Davos"
+                              Checked="OnCityToggle" Unchecked="OnCityToggle"/>
+                </StackPanel>
+
+                <!-- Import / Reset -->
+                <StackPanel Grid.Row="1" Grid.Column="2" Orientation="Horizontal">
+                    <Button x:Name="btnImportCsv" Content="Importer un fichier" Click="OnImportCsv" Margin="0,0,8,0"/>
+                    <Button x:Name="btnReset" Content="Réinitialiser" Click="OnReset"/>
+                </StackPanel>
+
+                <!-- Fonctions -->
+                <StackPanel Grid.Row="1" Grid.Column="3" Orientation="Horizontal">
+                    <TextBlock Text="Choisir une fonction" VerticalAlignment="Center" Margin="0,0,8,0"/>
+                    <ComboBox x:Name="cbFunction" Width="260" SelectionChanged="OnFunctionChanged">
+                        <ComboBoxItem Content="(aucune)" IsSelected="True"/>
+                        <ComboBoxItem Content="x^2"/>
+                        <ComboBoxItem Content="sin(x)"/>
+                        <ComboBoxItem Content="sin(x)+sin(3x)/3+sin(5x)/5"/>
+                        <ComboBoxItem Content="x*sin(x)"/>
+                        <ComboBoxItem Content="personnalisée…"/>
+                    </ComboBox>
+                </StackPanel>
+
+                <!-- Message statut -->
+                <TextBlock x:Name="txtStatus" Grid.Row="1" Grid.Column="4"
+                           Text="" Foreground="#444" VerticalAlignment="Center"/>
+            </Grid>
+        </Border>
+
+        <!-- Zone graphique -->
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <wpf:WpfPlot x:Name="Plot" Grid.Row="0"/>
+
+            <DockPanel Grid.Row="1" LastChildFill="True" Margin="0,8,0,0">
+                <TextBlock Text="Années" DockPanel.Dock="Left" Margin="0,0,12,0" VerticalAlignment="Center"/>
+                <TextBlock Text="Précipitations en mm" DockPanel.Dock="Right" VerticalAlignment="Center"/>
+            </DockPanel>
+        </Grid>
+    </Grid>
+</Window>
