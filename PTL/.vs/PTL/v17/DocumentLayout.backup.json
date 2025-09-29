@@ -1,0 +1,70 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\05-repertoires-ict-ssd (2022)\\Deuxi\u00E8me ann\u00E9e\\P_FUN\\P_FUN\\PTL\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A553D467-6CA0-4D86-BE51-5CBD58B90C5A}|PTL\\PTL.csproj|d:\\05-repertoires-ict-ssd (2022)\\deuxi\u00E8me ann\u00E9e\\p_fun\\p_fun\\ptl\\ptl\\meteosuissecsvimporter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A553D467-6CA0-4D86-BE51-5CBD58B90C5A}|PTL\\PTL.csproj|solutionrelative:ptl\\meteosuissecsvimporter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A553D467-6CA0-4D86-BE51-5CBD58B90C5A}|PTL\\PTL.csproj|d:\\05-repertoires-ict-ssd (2022)\\deuxi\u00E8me ann\u00E9e\\p_fun\\p_fun\\ptl\\ptl\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A553D467-6CA0-4D86-BE51-5CBD58B90C5A}|PTL\\PTL.csproj|solutionrelative:ptl\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A553D467-6CA0-4D86-BE51-5CBD58B90C5A}|PTL\\PTL.csproj|d:\\05-repertoires-ict-ssd (2022)\\deuxi\u00E8me ann\u00E9e\\p_fun\\p_fun\\ptl\\ptl\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A553D467-6CA0-4D86-BE51-5CBD58B90C5A}|PTL\\PTL.csproj|solutionrelative:ptl\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MeteoSuisseCsvImporter.cs",
+              "DocumentMoniker": "D:\\05-repertoires-ict-ssd (2022)\\Deuxi\u00E8me ann\u00E9e\\P_FUN\\P_FUN\\PTL\\PTL\\MeteoSuisseCsvImporter.cs",
+              "RelativeDocumentMoniker": "PTL\\MeteoSuisseCsvImporter.cs",
+              "ToolTip": "D:\\05-repertoires-ict-ssd (2022)\\Deuxi\u00E8me ann\u00E9e\\P_FUN\\P_FUN\\PTL\\PTL\\MeteoSuisseCsvImporter.cs",
+              "RelativeToolTip": "PTL\\MeteoSuisseCsvImporter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T12:15:36.542Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\05-repertoires-ict-ssd (2022)\\Deuxi\u00E8me ann\u00E9e\\P_FUN\\P_FUN\\PTL\\PTL\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "PTL\\MainWindow.xaml",
+              "ToolTip": "D:\\05-repertoires-ict-ssd (2022)\\Deuxi\u00E8me ann\u00E9e\\P_FUN\\P_FUN\\PTL\\PTL\\MainWindow.xaml",
+              "RelativeToolTip": "PTL\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-09-15T12:06:37.06Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\05-repertoires-ict-ssd (2022)\\Deuxi\u00E8me ann\u00E9e\\P_FUN\\P_FUN\\PTL\\PTL\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "PTL\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\05-repertoires-ict-ssd (2022)\\Deuxi\u00E8me ann\u00E9e\\P_FUN\\P_FUN\\PTL\\PTL\\MainWindow.xaml.cs",
+              "RelativeToolTip": "PTL\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAJkAAAAAAAAAAAA3wBwAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-15T12:06:35.438Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
