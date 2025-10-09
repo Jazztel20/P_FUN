@@ -1,5 +1,5 @@
 JDT:
-- tâches, prompt.
+- (tâches), prompt.
 
 Rapport:
-- objectifs pédagogiques, code, tests fonctionnels.
+- code, tests fonctionnels.
