@@ -2,4 +2,4 @@ JDT:
 - (tâches), prompt.
 
 Rapport:
-- code, tests fonctionnels.
+- code, (tests fonctionnels.)
