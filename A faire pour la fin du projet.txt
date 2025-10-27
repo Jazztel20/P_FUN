@@ -1,5 +1,0 @@
-JDT:
-- (tâches), prompt.
-
-Rapport:
-- code, (tests fonctionnels.)
